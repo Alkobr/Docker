@@ -14,7 +14,7 @@ COPY src ./src
 RUN mvn package -DskipTests
 
 # Use the same Java version for the runtime container
-FROM openjdk:18-alpine
+FROM openjdk:17.0.1-jdk-slim
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -24,6 +24,6 @@ COPY --from=build /app/target/docker-0.0.1-SNAPSHOT.jar /app
 
 # Copy the application.properties file to the container's config directory
 COPY src/main/resources/application.properties ./config/
-
+EXPOSE 8080
 # Set the command to run the Java application
 CMD ["java", "-jar", "docker-0.0.1-SNAPSHOT.jar"]

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NaturalLifeCrud from './component/naturalLifeCrud'
 function App() {
