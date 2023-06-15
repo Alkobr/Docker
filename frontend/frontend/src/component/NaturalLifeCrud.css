@@ -1,0 +1,28 @@
+body{
+    background-color: #8a2be2;
+  }
+  .container {
+      background-color: #f2e7fe;
+      padding: 20px;
+      margin: 100px;
+    }
+    
+    .purple-button {
+      background-color: #8a2be2;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .form-container {
+      /* margin-bottom: 10px; */
+     justify-content: center;
+     justify-items: center;
+    }
+    
+    .response {
+      margin-top: 20px;
+      color: #8a2be2;
+    }
